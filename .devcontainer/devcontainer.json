@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json 
+{
+	"name": "Golang devcontainer image",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick a Node version: 10, 12, 14
+		//"args": { "VARIANT": "12" }
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "bash (container default)"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		//"davidanson.vscode-markdownlint",
+		"yzhang.markdown-all-in-one",
+		"golang.go",
+	
+	],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		3223
+	],
+	// Specifies a command that should be run after the container has been created.
+	//"postCreateCommand": "yarn install",
+	// Comment out the next line to run as root instead.
+	//"remoteUser": "node"
+}
